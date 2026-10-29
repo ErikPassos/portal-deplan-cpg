@@ -1,0 +1,124 @@
+[
+  {
+    "titulo": "Ordenador de Árvore",
+    "descricao": "Concessão e alteração de perfil de ordenador de árvore.",
+    "url": "procedimentos/ordenador-arvore.html",
+    "categoria": "Procedimentos",
+    "icone": "🔀"
+  },
+  {
+    "titulo": "Mudança de Gestor",
+    "descricao": "Alteração de gestor da unidade.",
+    "url": "procedimentos/mudanca-gestor.html",
+    "categoria": "Procedimentos",
+    "icone": "👤"
+  },
+  {
+    "titulo": "Alteração de Sigla",
+    "descricao": "Alteração de sigla e descrição da unidade.",
+    "url": "procedimentos/alteracao-sigla.html",
+    "categoria": "Procedimentos",
+    "icone": "🏢"
+  },
+  {
+    "titulo": "CMD/SubCMD",
+    "descricao": "Liberação de perfis de comandante e subcomandante.",
+    "url": "procedimentos/liberacao-cmd-subcmd.html",
+    "categoria": "Procedimentos",
+    "icone": "⭐"
+  },
+  {
+    "titulo": "Transferência de Usuário",
+    "descricao": "Relotação de usuários entre unidades.",
+    "url": "procedimentos/transferencia-usuario.html",
+    "categoria": "Procedimentos",
+    "icone": "🚚"
+  },
+  {
+    "titulo": "Cadastro de Usuário",
+    "descricao": "Cadastro de usuários em sistemas corporativos.",
+    "url": "procedimentos/cadastro-usuario.html",
+    "categoria": "Procedimentos",
+    "icone": "➕"
+  },
+  {
+    "titulo": "Remoção de Usuário",
+    "descricao": "Remoção de usuários e perfis.",
+    "url": "procedimentos/remocao-usuario.html",
+    "categoria": "Procedimentos",
+    "icone": "❌"
+  },
+  {
+    "titulo": "Alteração de Dados",
+    "descricao": "Atualização cadastral de usuários.",
+    "url": "procedimentos/alteracao-dados.html",
+    "categoria": "Procedimentos",
+    "icone": "✏️"
+  },
+  {
+    "titulo": "Fluxogramas",
+    "descricao": "Fluxos operacionais do DEPLAN/CPG.",
+    "url": "fluxogramas/index.html",
+    "categoria": "Fluxogramas",
+    "icone": "🔀"
+  },
+  {
+    "titulo": "Modelos",
+    "descricao": "Modelos de documentos institucionais.",
+    "url": "modelos/index.html",
+    "categoria": "Modelos",
+    "icone": "📄"
+  },
+  {
+    "titulo": "Base de Conhecimento",
+    "descricao": "FAQ, dúvidas frequentes e boas práticas.",
+    "url": "conhecimento/index.html",
+    "categoria": "Conhecimento",
+    "icone": "📚"
+  },
+  {
+    "titulo": "Portaria 065-CG/16",
+    "descricao": "Abreviaturas e Siglas da PMBA.",
+    "url": "portarias/index.html",
+    "categoria": "Portarias",
+    "icone": "📜"
+  },
+  {
+    "titulo": "Portaria 026-CG/2026",
+    "descricao": "Estrutura Organizacional e Efetivo da PMBA.",
+    "url": "portarias/index.html",
+    "categoria": "Portarias",
+    "icone": "📜"
+  },
+  {
+    "titulo": "Indicadores de Segurança Pública",
+    "descricao": "Painel estatístico do Governo da Bahia.",
+    "url": "links/index.html",
+    "categoria": "Links de Dados",
+    "icone": "📊"
+  },
+  {
+    "titulo": "Informações Criminais",
+    "descricao": "Dados criminais atualizados em Power BI.",
+    "url": "links/index.html",
+    "categoria": "Links de Dados",
+    "icone": "🚔"
+  },
+  {
+    "titulo": "Dashboards",
+    "descricao": "Painéis de indicadores e Business Intelligence.",
+    "url": "dashboard/index.html",
+    "categoria": "Dashboards",
+    "icone": "📈"
+  },
+  
+
+{
+  "titulo": "Desdobramento de Unidade",
+  "descricao": "Criação, atualização e relotação de usuários decorrentes de desdobramento organizacional.",
+  "url": "procedimentos/desdobramento-unidade.html",
+  "categoria": "Procedimentos",
+  "icone": "🏛️"
+}
+
+]

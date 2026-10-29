@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Desdobramento de Unidade | Portal DEPLAN/CPG
+    </title>
+
+    <meta name="description"
+          content="Procedimento de Desdobramento de Unidade">
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+
+    <link rel="icon"
+          type="image/png"
+          href="../imagens/pmba.png">
+
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+
+        mermaid.initialize({
+            startOnLoad: true
+        });
+    </script>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container topbar">
+
+        <div class="brand">
+
+            <img src="../imagens/pmba.png"
+                 alt="PMBA"
+                 class="logo">
+
+            <div>
+
+                <h1>
+                    Portal DEPLAN / CPG
+                </h1>
+
+                <p>
+                    Procedimentos Operacionais
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="header-actions">
+
+            <button
+                id="themeToggle"
+                title="Alternar tema">
+
+                🌙
+
+            </button>
+
+            <img src="../imagens/deplan.png"
+                 alt="DEPLAN"
+                 class="logo">
+
+            <button
+                id="menuBtn"
+                class="menu-btn"
+                aria-label="Menu">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <nav id="mainNav">
+
+            <a href="../index.html">
+                🏠 Início
+            </a>
+
+            <a href="index.html">
+                📋 Procedimentos
+            </a>
+
+            <a href="../fluxogramas/index.html">
+                🔀 Fluxogramas
+            </a>
+
+            <a href="../modelos/index.html">
+                📄 Modelos
+            </a>
+
+            <a href="../conhecimento/index.html">
+                📚 Conhecimento
+            </a>
+
+            <a href="../portarias/index.html">
+                📜 Portarias
+            </a>
+
+            <a href="../links/index.html">
+                🔗 Links de Dados
+            </a>
+
+            <a href="../dashboard/index.html">
+                📊 Dashboards
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <div class="content">
+
+        <p>
+
+            <a href="../index.html">Início</a>
+            >
+            <a href="index.html">Procedimentos</a>
+            >
+            Desdobramento de Unidade
+
+        </p>
+
+        <h1>
+            🏛️ Desdobramento de Unidade
+        </h1>
+
+        <h2>
+            Objetivo
+        </h2>
+
+        <p>
+            Realizar os procedimentos necessários para criação,
+            atualização e estruturação de unidades decorrentes
+            de desdobramento organizacional.
+        </p>
+
+        <h2>
+            Normativos de Referência
+        </h2>
+
+        <div class="card-grid">
+
+            <div class="card">
+
+                <h3>
+                    📜 Portaria nº 026-CG/2026
+                </h3>
+
+                <p>
+                    Organização Estrutural, Funcional e
+                    Distribuição de Efetivo da PMBA.
+                </p>
+
+                <a href="../documentos/Portaria_026_CG_2026.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    📖 Abrir Portaria
+
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+                    📜 Portaria nº 065-CG/2016
+                </h3>
+
+                <p>
+                    Abreviaturas e Siglas da PMBA.
+                </p>
+
+                <a href="../documentos/Portaria_065_CG_16.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    📖 Abrir Portaria
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <h2>
+            Fluxograma
+        </h2>
+
+        <pre class="mermaid">
+flowchart TD
+
+A[Receber Solicitação]
+
+A --> B[Analisar Portaria 26-CG/2026]
+
+B --> C[Analisar Portaria 65-CG/2016]
+
+C --> D{Unidade prevista na estrutura organizacional?}
+
+D -->|Não| E[Informar impossibilidade de criação]
+
+E --> F[Responder Ofício]
+
+F --> G[Encerrar]
+
+D -->|Sim| H{Sigla existe e está autorizada?}
+
+H -->|Não| I[Informar impossibilidade de criação]
+
+I --> F
+
+H -->|Sim| J[Baixar Planilha de Cadastro da Unidade]
+
+J --> K[Preencher Dados da Unidade]
+
+K --> L[Enviar para MGUServiceDesk]
+
+L --> M[Atualizar Sigla no eForms]
+
+M --> N[Baixar Planilha de Relotação]
+
+N --> O[Transferir Usuários]
+
+O --> P[Responder Ofício]
+
+P --> Q[Concluir]
+        </pre>
+
+        <h2>
+            Dados Necessários para Cadastro de Unidade
+        </h2>
+
+        <ul>
+
+            <li>Email da unidade</li>
+
+            <li>Sigla completa</li>
+
+            <li>Descrição da unidade</li>
+
+        </ul>
+
+        <h2>
+            Dados Necessários para Relotação
+        </h2>
+
+        <ul>
+
+            <li>Email da unidade</li>
+
+            <li>Sigla completa</li>
+
+            <li>Dois usuários por unidade</li>
+
+            <li>Não utilizar Comandante ou Subcomandante</li>
+
+        </ul>
+
+        <h2>
+            Passo a Passo
+        </h2>
+
+        <ol>
+
+            <li>Analisar a Portaria nº 026-CG/2026.</li>
+
+            <li>Verificar se a unidade está prevista na estrutura organizacional.</li>
+
+            <li>Analisar a Portaria nº 065-CG/2016.</li>
+
+            <li>Confirmar a existência e autorização da sigla.</li>
+
+            <li>Caso a unidade ou sigla não esteja prevista, responder o Ofício informando a impossibilidade de criação.</li>
+
+            <li>Baixar a planilha de Cadastro de Unidade.</li>
+
+            <li>Preencher os dados da nova unidade.</li>
+
+            <li>Encaminhar a planilha ao MGUServiceDesk.</li>
+
+            <li>Atualizar a sigla da unidade no eForms.</li>
+
+            <li>Baixar a planilha de relotação.</li>
+
+            <li>Transferir os usuários para a nova unidade.</li>
+
+            <li>Responder o Ofício ou Processo.</li>
+
+            <li>Concluir o atendimento.</li>
+
+        </ol>
+
+        <h2>
+            Checklist
+        </h2>
+
+        <ul>
+
+            <li>☐ Portaria 026 analisada</li>
+
+            <li>☐ Unidade prevista na estrutura organizacional</li>
+
+            <li>☐ Portaria 065 analisada</li>
+
+            <li>☐ Sigla validada</li>
+
+            <li>☐ Cadastro da unidade realizado</li>
+
+            <li>☐ Planilha enviada ao MGUServiceDesk</li>
+
+            <li>☐ Sigla atualizada no eForms</li>
+
+            <li>☐ Usuários relotados</li>
+
+            <li>☐ Ofício respondido</li>
+
+            <li>☐ Atendimento concluído</li>
+
+        </ul>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <div class="container">
+
+        <h3>
+            Portal de Procedimentos DEPLAN/CPG
+        </h3>
+
+        <p>
+            Central de Conhecimento Operacional
+        </p>
+
+        <br>
+
+        <p>
+            <strong>Desenvolvido por:</strong>
+        </p>
+
+        <p>
+            SD PM Erik Fernando Bonifácio Passos
+        </p>
+
+        <p>
+            Matrícula: 92037339
+        </p>
+
+        <p>
+            <a href="mailto:erik.fernando@pm.ba.gov.br">
+                erik.fernando@pm.ba.gov.br
+            </a>
+        </p>
+
+        <p>
+            <a href="https://github.com/ErikPassos"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                GitHub: ErikPassos
+
+            </a>
+        </p>
+
+        <br>
+
+        <p>
+            Versão 2.0
+        </p>
+
+        <p>
+            © 2026 Polícia Militar da Bahia
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="../js/menu.js"></script>
+<script src="../js/darkmode.js"></script>
+
+</body>
+</html

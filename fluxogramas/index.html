@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Fluxogramas | Portal DEPLAN/CPG</title>
+
+    <meta name="description"
+          content="Fluxogramas Operacionais do DEPLAN/CPG">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="icon"
+          type="image/png"
+          href="../imagens/pmba.png">
+
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+
+        mermaid.initialize({
+            startOnLoad: true
+        });
+    </script>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container topbar">
+
+        <div class="brand">
+
+            <img
+                src="../imagens/pmba.png"
+                alt="Logo PMBA"
+                class="logo">
+
+            <div>
+
+                <h1>Portal DEPLAN / CPG</h1>
+
+                <p>
+                    Central de Conhecimento Operacional
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="header-actions">
+
+            <button
+                id="themeToggle"
+                title="Alternar tema">
+                🌙
+            </button>
+
+            <img
+                src="../imagens/deplan.jpg"
+                alt="Logo DEPLAN"
+                class="logo">
+
+            <button
+                id="menuBtn"
+                class="menu-btn"
+                aria-label="Abrir Menu">
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <nav id="mainNav">
+
+            <a href="../index.html">
+                🏠 Início
+            </a>
+
+            <a href="../procedimentos/index.html">
+                📋 Procedimentos
+            </a>
+
+            <a href="../fluxogramas/index.html">
+                🔀 Fluxogramas
+            </a>
+
+            <a href="../modelos/index.html">
+                📄 Modelos
+            </a>
+
+            <a href="../conhecimento/index.html">
+                📚 Conhecimento
+            </a>
+
+            <a href="../portarias/index.html">
+                📜 Portarias
+            </a>
+
+            <a href="../links/index.html">
+                🔗 Links de Dados
+            </a>
+
+            <a href="../dashboard/index.html">
+                📊 Dashboards
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+    <section class="hero">
+
+        <h2>🔀 Fluxogramas Operacionais</h2>
+
+        <p>
+            Fluxos padronizados dos processos executados pelo
+            DEPLAN/CPG.
+        </p>
+
+    </section>
+
+    <div class="content">
+
+        <h2>📥 Download das Planilhas</h2>
+
+        <p>
+            Utilize o portal abaixo para obtenção das planilhas e abertura de chamados:
+        </p>
+
+        <p>
+            <a href="https://www.portalseibahia.saeb.ba.gov.br/service-desk-0"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                Portal SEI Bahia - Service Desk
+
+            </a>
+        </p>
+
+    </div>
+
+    <br>
+
+    <div class="content">
+
+        <h2>🔀 Ordenador de Árvore</h2>
+
+        <pre class="mermaid">
+flowchart TD
+
+A[Receber Processo]
+--> B[Baixar Planilha]
+--> C[Preencher Planilha]
+--> D[Abrir Chamado PRODEB]
+--> E[Anexar Planilha]
+--> F[Registrar Protocolo]
+--> G[Responder Ofício]
+--> H[Concluir]
+        </pre>
+
+    </div>
+
+    <br>
+
+    <div class="content">
+
+        <h2>👤 Mudança de Gestor</h2>
+
+        <pre class="mermaid">
+flowchart TD
+
+A[Receber Solicitação]
+--> B[Conferir Matrícula]
+--> C[Conferir E-mail]
+--> D[Atualizar eForms]
+--> E[Emitir Ofício]
+--> F[Bloco de Assinaturas]
+--> G[Responder Ofício]
+--> H[Concluir]
+        </pre>
+
+    </div>
+
+    <br>
+
+    <div class="content">
+
+        <h2>🏢 Alteração de Sigla</h2>
+
+        <pre class="mermaid">
+flowchart TD
+
+A[Receber Solicitação]
+--> B[Verificar Sigla]
+--> C[Baixar Planilha]
+--> D[Preencher Planilha]
+--> E[Abrir Chamado PRODEB]
+--> F[Anexar Planilha]
+--> G[Atualizar eForms]
+--> H[Responder Ofício]
+--> I[Concluir]
+        </pre>
+
+    </div>
+
+    <br>
+
+    <div class="content">
+
+        <h2>⭐ CMD / SubCMD</h2>
+
+        <pre class="mermaid">
+flowchart TD
+
+A[Receber Processo]
+--> B[Baixar Planilha]
+--> C[Preencher Planilha]
+--> D[Abrir Chamado]
+--> E[Anexar Planilha]
+--> F[Registrar Protocolo]
+--> G[Responder Ofício]
+--> H[Concluir]
+        </pre>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <div class="container">
+
+        <h3>Portal de Procedimentos DEPLAN/CPG</h3>
+
+        <p>Central de Conhecimento Operacional</p>
+
+        <br>
+
+        <p><strong>Desenvolvido por:</strong></p>
+
+        <p>SD PM Erik Fernando Bonifácio Passos</p>
+
+        <p>Matrícula: 92037339</p>
+
+        <p>
+            E-mail:
+            <a href="mailto:erik.fernando@pm.ba.gov.br">
+                erik.fernando@pm.ba.gov.br
+            </a>
+        </p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/ErikPassos"
+               target="_blank"
+               rel="noopener noreferrer">
+                github.com/ErikPassos
+            </a>
+        </p>
+
+        <br>
+
+        <p>Versão 2.0</p>
+
+        <p>© 2026 Polícia Militar da Bahia</p>
+
+    </div>
+
+</footer>
+
+<script src="../js/menu.js"></script>
+<script src="../js/darkmode.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Alteração de Sigla e Descrição</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="icon"
+      type="image/png"
+      href="../imagens/pmba.png">
+
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+
+mermaid.initialize({
+    startOnLoad:true
+});
+</script>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container topbar">
+
+        <div class="brand">
+
+            <img
+                src="../imagens/pmba.png"
+                alt="PMBA"
+                class="logo">
+
+            <div>
+
+                <h1>Portal DEPLAN / CPG</h1>
+
+                <p>
+                    Procedimentos Operacionais
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="header-actions">
+
+            <button
+                id="themeToggle"
+                title="Alternar tema">
+                🌙
+            </button>
+
+            <img
+                src="../imagens/deplan.jpg"
+                alt="DEPLAN"
+                class="logo">
+
+            <button
+                id="menuBtn"
+                class="menu-btn"
+                aria-label="Menu">
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <nav id="mainNav">
+
+            <a href="../index.html">
+                🏠 Início
+            </a>
+
+            <a href="index.html">
+                📋 Procedimentos
+            </a>
+
+            <a href="../fluxogramas/index.html">
+                🔀 Fluxogramas
+            </a>
+
+            <a href="../modelos/index.html">
+                📄 Modelos
+            </a>
+
+            <a href="../conhecimento/index.html">
+                📚 Conhecimento
+            </a>
+
+            <a href="../portarias/index.html">
+                📜 Portarias
+            </a>
+
+            <a href="../links/index.html">
+                🔗 Links de Dados
+            </a>
+
+            <a href="../dashboard/index.html">
+                📊 Dashboards
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<main class="container">
+
+<div class="content">
+
+<h1>🏢 Alteração de Sigla e Descrição</h1>
+
+<p>
+Guia operacional passo a passo.
+</p>
+
+<div class="fluxograma-toggle">
+
+<button onclick="toggleFluxograma()">
+🔀 Exibir Fluxograma
+</button>
+
+<div
+id="fluxograma"
+class="fluxograma-area">
+
+<pre class="mermaid">
+flowchart TD
+
+A[Receber Solicitação]
+--> B[Verificar Sigla]
+
+B --> C{Sigla Existe?}
+
+C -->|Não| D[Responder Ofício]
+
+D --> E[Encerrar]
+
+C -->|Sim| F[Baixar Planilha]
+
+F --> G[Preencher Planilha]
+
+G --> H[Abrir Chamado PRODEB]
+
+H --> I[Anexar Planilha]
+
+I --> J[Atualizar eForms]
+
+J --> K[Responder Ofício]
+
+K --> L[Concluir]
+</pre>
+
+</div>
+
+</div>
+
+<div class="guia-layout">
+
+<aside class="menu-guia">
+
+<h3>Etapas</h3>
+
+<ul>
+
+<li>
+<a href="#etapa1">
+1. Validar Sigla
+</a>
+</li>
+
+<li>
+<a href="#etapa2">
+2. Baixar Planilha
+</a>
+</li>
+
+<li>
+<a href="#etapa3">
+3. Preencher Planilha
+</a>
+</li>
+
+<li>
+<a href="#etapa4">
+4. Abrir Chamado
+</a>
+</li>
+
+<li>
+<a href="#etapa5">
+5. Atualizar eForms
+</a>
+</li>
+
+<li>
+<a href="#etapa6">
+6. Responder Ofício
+</a>
+</li>
+
+<li>
+<a href="#etapa7">
+7. Concluir
+</a>
+</li>
+
+</ul>
+
+</aside>
+
+<div>
+
+<section id="etapa1" class="etapa">
+
+<h2>Etapa 1 - Validar Sigla</h2>
+
+<div class="sistema">
+
+📜 Documentação Necessária
+
+</div>
+
+<ul>
+
+<li>
+<a href="../documentos/Portaria_065_CG_16.pdf"
+   target="_blank">
+📜 Portaria nº 065-CG/2016
+</a>
+</li>
+
+<li>
+<a href="../documentos/Portaria_026_CG_2026.pdf"
+   target="_blank">
+📜 Portaria nº 026-CG/2026
+</a>
+</li>
+
+</ul>
+
+<p>
+Verifique se a sigla existe e está autorizada.
+</p>
+
+<div class="atencao">
+
+⚠️ Caso a sigla não exista,
+o procedimento não deve prosseguir.
+
+</div>
+
+</section>
+
+<section id="etapa2" class="etapa">
+
+<h2>Etapa 2 - Baixar Planilha</h2>
+
+<div class="sistema">
+
+🌐 Sistema Utilizado:
+Portal SEI Bahia
+
+</div>
+
+<pre>
+Portal SEI Bahia
+↓
+Service Desk
+↓
+MGUServiceDesk
+↓
+Planilha Sigla e Descrição
+</pre>
+
+<p>
+
+<a href="https://www.portalseibahia.saeb.ba.gov.br/service-desk-0"
+   target="_blank"
+   rel="noopener noreferrer">
+
+🔗 Abrir Portal SEI Bahia
+
+</a>
+
+</p>
+
+</section>
+
+<section id="etapa3" class="etapa">
+
+<h2>Etapa 3 - Preencher Planilha</h2>
+
+<p>
+Preencher:
+</p>
+
+<ul>
+
+<li>Email da Unidade</li>
+
+<li>Sigla Completa</li>
+
+<li>Descrição da Unidade</li>
+
+</ul>
+
+</section>
+
+<section id="etapa4" class="etapa">
+
+<h2>Etapa 4 - Abrir Chamado</h2>
+
+<div class="sistema">
+
+🖥 Sistema:
+MGUServiceDesk
+
+</div>
+
+<ol>
+
+<li>Abrir novo chamado.</li>
+
+<li>Anexar a planilha.</li>
+
+<li>Enviar solicitação.</li>
+
+<li>Registrar o protocolo.</li>
+
+</ol>
+
+</section>
+
+<section id="etapa5" class="etapa">
+
+<h2>Etapa 5 - Atualizar eForms</h2>
+
+<div class="sistema">
+
+🖥 Sistema:
+eForms
+
+</div>
+
+<pre>
+eForms
+↓
+Unidades
+↓
+Pesquisar Unidade
+↓
+Editar
+↓
+Atualizar Sigla
+↓
+Salvar
+</pre>
+
+</section>
+
+<section id="etapa6" class="etapa">
+
+<h2>Etapa 6 - Responder Ofício</h2>
+
+<ul>
+
+<li>Número do protocolo.</li>
+
+<li>Data da execução.</li>
+
+<li>Ações realizadas.</li>
+
+</ul>
+
+</section>
+
+<section id="etapa7" class="etapa">
+
+<h2>Etapa 7 - Concluir</h2>
+
+<ul>
+
+<li>Validar atualização.</li>
+
+<li>Arquivar solicitação.</li>
+
+<li>Encerrar atendimento.</li>
+
+</ul>
+
+<div class="resultado">
+
+✅ Resultado Esperado
+
+Sigla alterada com sucesso e processo concluído.
+
+</div>
+
+</section>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+<footer>
+
+<div class="container">
+
+<h3>Portal de Procedimentos DEPLAN/CPG</h3>
+
+<p>Central de Conhecimento Operacional</p>
+
+<br>
+
+<p><strong>Desenvolvido por:</strong></p>
+
+<p>
+SD PM Erik Fernando Bonifácio Passos
+</p>
+
+<p>
+Matrícula: 92037339
+</p>
+
+<p>
+<a href="mailto:erik.fernando@pm.ba.gov.br">
+erik.fernando@pm.ba.gov.br
+</a>
+</p>
+
+<p>
+<a href="https://github.com/ErikPassos"
+   target="_blank">
+GitHub: ErikPassos
+</a>
+</p>
+
+<br>
+
+<p>Versão 2.0</p>
+
+<p>© 2026 Polícia Militar da Bahia</p>
+
+</div>
+
+</footer>
+
+<script>
+
+function toggleFluxograma(){
+
+    document
+    .getElementById("fluxograma")
+    .classList
+    .toggle("ativo");
+
+}
+
+</script>
+
+<script src="../js/menu.js"></script>
+<script src="../js/darkmode.js"></script>
+
+</body>
+
+</html>
